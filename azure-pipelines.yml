@@ -17,3 +17,9 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: UiPathRunJob@4
+  inputs:
+    orchestratorConnection: 'Con_Orch_DevOps'
+    processName: 'DevOps Tutorial'
+    folderName: 'Tutorial'
+    user: 'danfoss\u434196'
